@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-INU | $1INU</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/simplebar.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/ff-1.css">
+    <link rel="stylesheet" href="assets/css/ff-2.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+                /* Jarak naik, sesuaikan sesuai kebutuhan */
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .rotating {
+            animation: rotate 4s ease-in-out infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(360deg);
+                /* Putar penuh 360 derajat */
+            }
+
+            100% {
+                transform: rotate(0deg);
+                /* Kembali ke posisi awal */
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-primary overflow-x-hidden">
+    <!-- Preloader -->
+    <!-- <div class="preloader">
+        <div class="pl">
+            <div class="pl__coin">
+                <div class="pl__coin-flare"></div>
+                <div class="pl__coin-flare"></div>
+                <div class="pl__coin-flare"></div>
+                <div class="pl__coin-flare"></div>
+                <div class="pl__coin-layers">
+                    <div class="pl__coin-layer">
+                        <div class="pl__coin-inscription"></div>
+                    </div>
+                    <div class="pl__coin-layer"></div>
+                    <div class="pl__coin-layer"></div>
+                    <div class="pl__coin-layer"></div>
+                    <div class="pl__coin-layer">
+                        <div class="pl__coin-inscription"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pl__shadow"></div>
+        </div>
+    </div> -->
+    <!-- Preloader End -->
+    <!-- Navbar  -->
+    <nav
+        class="navbar navbar-expand-lg primary-header primary-header--transparent-light-alt primary-header--fixed top-0 primary-header-crossed:full-dark">
+        <div class="container align-items-lg-center">
+            <!-- Logo -->
+            <a class="logo" href="index.html">
+                <img src="img/logo.png" alt="image" class="rotating logo__img logo__img--light">
+            </a>
+            <!-- Logo End-->
+            <!-- Mobile Menu Toggler -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar0"
+                aria-controls="navbar0" aria-expanded="false" aria-label="Toggle navigation">
+                <iconify-icon icon="solar:hamburger-menu-line-duotone"></iconify-icon>
+            </button>
+            <!-- Mobile Menu Toggler End-->
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbar0">
+                <ul class="navbar-nav flex-grow-1 justify-content-center mx-lg-4 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about"> About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#tokenomics"> Tokenomics </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#howtobuy"> How to Buy </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://x.com/1INU_coin"> Twitter </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://t.me/OneINU_Community"> Telegram </a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 ms-lg-auto">
+                    <a href="https://app.uniswap.org/swap?&chain=eth&use=v2&outputCurrency=0x24f101d415234b714a0ebe87671b8fa06f81f845&inputCurrency=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2" class="btn btn-light fw-bold text-heading "> Buy Now </a>
+                </div>
+            </div>
+            <!-- Menu End -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- Hero -->
+            <section class="hero-1 section-space-top">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-xl-9 text-center">
+                            <span class="d-inline-block mb-4 text-secondary fs-24 text-stroke gsap-text-animation"
+                                data-split-type="words" data-delay="0.5"> WELCOME TO </span>
+                            <h1 class="hero-1__title mb-10 text-light text-stroke-md text-shadow-md gsap-text-animation"
+                                data-split-type="chars" data-delay="0.75"> 1-INU </h1>
+                            <div class="d-flex justify-content-center align-items-center flex-wrap gap-4">
+                                <a href="https://dexscreener.com/ethereum/0x24F101D415234b714A0Ebe87671B8fa06f81f845"
+                                    class="btn btn-lg btn-secondary text-heading align-items-center rounded gsap-fade-in"
+                                    data-delay="1" data-y="50%">
+                                    <iconify-icon icon="mdi:ethereum"></iconify-icon>
+                                    <span class="d-inline-block ff-1">Dexscreener</span>
+                                </a>
+                                <a href="https://app.uniswap.org/swap?&chain=eth&use=v2&outputCurrency=0x24f101d415234b714a0ebe87671b8fa06f81f845&inputCurrency=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+                                    class="btn btn-lg btn-light text-heading align-items-center rounded rounded gsap-fade-in"
+                                    data-delay="1.15" data-y="50%">
+                                    <iconify-icon icon="mdi:ethereum"></iconify-icon>
+                                    <span class="d-inline-block ff-1">Buy Now</span>
+                                </a>
+                            </div>
+                            <img src="img/char1.png" alt="image" class="floating img-fluid mt-10 gsap-fade-in"
+                                data-delay="1.25">
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/shape/hero-bg-1.png" alt="image"
+                    class="img-fluid w-100 position-absolute start-0 bottom-0 z-n1 pointer-none gsap-fade-in"
+                    data-delay="3.5">
+                <img src="assets/img/shape/hero-cloud-1.png" alt="image"
+                    class="img-fluid w-100 position-absolute start-50 bottom-0 translate-middle-x z-n1 gsap-fade-in"
+                    data-delay="1.5">
+                <img src="assets/img/shape/hero-element-1.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--1 gsap-fade-in" data-delay="3.1">
+                <img src="assets/img/shape/hero-element-2.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--2 gsap-fade-in" data-delay="2.75">
+                <img src="assets/img/shape/hero-element-3.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--3 gsap-fade-in" data-delay="3.2">
+                <img src="assets/img/shape/hero-element-10.png" alt="image" style="max-width: 300px;"
+                    class="rotating img-fluid hero-1__element hero-1__element--4 gsap-fade-in" data-delay="2.5">
+                <img src="assets/img/shape/hero-element-5.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--5 gsap-fade-in" data-delay="3.3">
+                <img src="assets/img/shape/hero-element-6.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--6 gsap-fade-in" data-delay="3">
+                <img src="assets/img/shape/hero-element-7.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--7 gsap-fade-in" data-delay="3.4">
+                <img src="assets/img/shape/hero-element-8.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--8 gsap-fade-in" data-delay="1.75" data-y="100">
+                <img src="assets/img/shape/hero-element-9.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--9 gsap-fade-in" data-delay="1.75" data-y="100">
+                <img src="assets/img/shape/hero-element-10.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--10 gsap-fade-in" data-delay="1.75" data-y="100">
+                <img src="assets/img/shape/hero-element-11.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--11 gsap-fade-in" data-delay="1.75" data-y="100">
+                <img src="assets/img/shape/hero-element-12.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--12 gsap-fade-in" data-delay="1.75" data-y="100">
+                <img src="assets/img/shape/hero-element-13.png" alt="image"
+                    class="img-fluid hero-1__element hero-1__element--13 gsap-fade-in" data-delay="1.75" data-y="100">
+            </section>
+            <!-- Hero End -->
+            <!-- Ticker -->
+            <div class="ticker-1 py-4 bg-light border-top border-bottom border-2x border-dark gsap-fade-in"
+                data-delay="3.5">
+                <div class="container-fluid p-0">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <div class="scroller-x" data-speed="slow" data-direction="right">
+                                <ul class="list list-row align-items-center gap-4 scroller-x__list">
+                                    <li>
+                                        <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                    </li>
+                                    <li>
+                                        <h4 class="mb-0 text-secondary text-stroke text-shadow"> 1-INU </h4>
+                                    </li>
+                                    <li>
+                                        <iconify-icon icon="mdi:ethereum"></iconify-icon>
+                                        <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                    </li>
+                                    <li>
+                                        <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                    </li>
+                                    <li>
+                                        <h4 class="mb-0 text-secondary text-stroke text-shadow"> 1-INU </h4>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                    </li>
+                                    <li>
+                                        <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                    </li>
+                                    <li>
+                                        <h4 class="mb-0 text-secondary text-stroke text-shadow"> 1-INU </h4>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                    </li>
+                                    <li>
+                                        <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ticker End -->
+            <!-- About Section -->
+            <section class="section-space-y">
+                <div class="container">
+                    <div class="row align-items-center gy-10">
+                        <div class="col-md-5">
+                            <div class="position-relative gsap-scale-in" data-scroll-trigger="true" data-delay="0.75">
+                                <div class="ratio ratio-16x9 rounded-5 overflow-hidden border border-2x border-dark shadow-sharp-md">
+                                    <video autoplay muted loop playsinline class="w-100 h-100 object-fit-cover">
+                                        <source src="img/video/welcomeinu.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="position-relative bg-secondary px-6 py-8 px-xl-10 py-xl-12 px-xxl-15 py-xxl-18 rounded-5 border border-2x border-dark shadow-sharp-md z-1 gsap-fade-in"
+                                data-scroll-trigger="true" data-delay="0.75">
+                                <h2 class="text-light text-stroke text-shadow">ABOUT $1INU</h2>
+                                <p class="mb-8 fs-24 text-heading"> Welcome to the top 1% club, anon.
+                                    99% supply? Burned.🔥
+                                    What’s left is legendary.
+                                    This INU is 1 of a kind, the first dedicated burn project in the crypto world! </p>
+                                <div class="d-flex align-items-center flex-wrap gap-6">
+                                    <a href="https://app.uniswap.org/swap?&chain=eth&use=v2&outputCurrency=0x24f101d415234b714a0ebe87671b8fa06f81f845&inputCurrency=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2" class="btn btn-lg btn-light text-heading align-items-center rounded">
+                                        <iconify-icon icon="ic:twotone-thumb-up-off-alt"></iconify-icon>
+                                        <span class="d-inline-block ff-1">Buy Token</span>
+                                    </a>
+                                    <ul class="list list-row align-items-center flex-wrap gap-4">
+                                        <li>
+                                            <a href="https://t.me/OneINU_Community"
+                                                class="btn btn-icon btn-lg btn-light rounded-circle">
+                                                <iconify-icon icon="ri:telegram-fill"></iconify-icon>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://x.com/1INU_coin"
+                                                class="btn btn-icon btn-lg btn-light rounded-circle">
+                                                <iconify-icon icon="prime:twitter"></iconify-icon>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="assets/img/shape/about-element-1.png" alt="image"
+                                    class="img-fluid d-none d-xl-block position-absolute start-0 top-0 translate-middle-y pointer-none">
+                                <img src="assets/img/shape/about-element-2.png" alt="image"
+                                    class="img-fluid d-none d-xl-block position-absolute end-0 top-0 translate-middle-y pointer-none">
+                                <img src="assets/img/shape/about-element-3.png" alt="image"
+                                    class="img-fluid d-none d-xxl-block position-absolute start-100 top-100 translate-middle pointer-none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section End -->
+            <!-- Tokenomics  -->
+            <div class="section-space-y" id="tokenomics">
+                <div class="section-space-md-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="mb-0 text-center text-light text-stroke-md text-shadow-md fs-6vw gsap-text-animation"
+                                    data-scroll-trigger="true" data-split-type="words"> TOKENOMICS </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="border border-12x border-secondary p-6 p-xl-8 rounded-5 shadow-sharp-md text-center gsap-fade-in"
+                                data-scroll-trigger="true" data-y="10">
+                                <div class="counter-1 rounded-pill  py-2 px-8 border border-4x border-dark">
+                                    <h3 class="text-light text-stroke text-shadow my-6">EASY BUY $1INU</h3>
+                                </div>
+                                <div class="border border-1x shadow-sharp rounded-5 bg-light p-6 mt-4">
+                                    <iframe
+    src="https://app.uniswap.org/#/swap?exactField=input&exactAmount=10&inputCurrency=ETH&outputCurrency=0x24F101D415234b714A0Ebe87671B8fa06f81f845"
+    height="660px" width="100%" style="
+    border: 0;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    display: block;
+    border-radius: 10px;
+    max-width: 960px;
+    min-height: 500px;
+    overflow: hidden;
+    " frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="p-8 bg-light border border-1x border-dark shadow-sharp text-center rounded h-100 gsap-fade-in"
+                                        data-scroll-trigger="true" data-y="10">
+                                        <h2 class="text-danger text-stroke text-shadow">100B</h2>
+                                        <p class="mb-0 text-heading fs-18">TOKEN SUPPLY</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-8 bg-light border border-1x border-dark shadow-sharp text-center rounded h-100 gsap-fade-in"
+                                        data-scroll-trigger="true" data-y="10" data-delay="0.25">
+                                        <h2 class="text-secondary text-stroke text-shadow">YES</h2>
+                                        <p class="mb-0 text-heading fs-18">LP BURNT</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-8 bg-light border border-1x border-dark shadow-sharp text-center rounded h-100 gsap-fade-in"
+                                        data-scroll-trigger="true" data-y="10">
+                                        <h2 class="text-secondary text-stroke text-shadow">0%</h2>
+                                        <p class="mb-0 text-heading fs-18">BUY TAX</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-8 bg-light border border-1x border-dark shadow-sharp text-center rounded h-100 gsap-fade-in"
+                                        data-scroll-trigger="true" data-y="10" data-delay="0.25">
+                                        <h2 class="text-danger text-stroke text-shadow">0%</h2>
+                                        <p class="mb-0 text-heading fs-18">SELL TAX</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+    <div class="d-flex align-items-center p-3 rounded bg-light border border-1x border-dark shadow-sharp gsap-fade-in"
+        data-scroll-trigger="true" data-y="10">
+        <input type="text" class="form-control border-0 text-dark" value="0x24F101D415234b714A0Ebe87671B8fa06f81f845" id="wallet-address" readonly>
+        <button type="button" class="btn btn-icon btn-secondary" onclick="copyToClipboard()">
+            <iconify-icon icon="iconamoon:copy-light"></iconify-icon>
+        </button>
+    </div>
+</div>
+                                <div class="col-12">
+                                    <div class="position-relative gsap-scale-in" data-scroll-trigger="true" data-delay="0.75">
+                                <div class="ratio ratio-4x3 rounded-5 overflow-hidden border border-2x border-dark shadow-sharp-md">
+                                    <video autoplay muted loop playsinline class="w-100 h-100 object-fit-cover">
+                                        <source src="img/video/dex-1inu.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tokenomics End -->
+            <!-- How To Buy Section -->
+            <div class="section-space-top" id="howtobuy">
+                <div class="container-fluid container-fhd">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="how-to-buy-section-1 section-space-y">
+                                <div class="section-space-md-bottom">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class="mb-0 text-center text-light text-stroke-md text-shadow-md fs-6vw gsap-text-animation"
+                                                    data-split-type="words" data-scroll-trigger="true"> HOW TO <span
+                                                        class="text-secondary">BUY</span>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-xl-4">
+                                            <div class="row g-4">
+                                                <div class="col-md-6 col-xl-12">
+                                                    <div class="border border-dark shadow-sharp rounded-5 bg-light gsap-fade-in"
+                                                        data-scroll-trigger="true" data-y="25">
+                                                        <div class="border-bottom border-dark px-8 pt-8 pb-4">
+                                                            <ul class="list list-row gap-2">
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-danger"></span>
+                                                                </li>
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-warning"></span>
+                                                                </li>
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-success"></span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="p-8">
+                                                            <h5 style="text-transform: uppercase;">create a wallet</h5>
+                                                            <p class="mb-0 fs-18 text-heading"> First, you'll need a crypto wallet. Grab MetaMask for free from your app store or as a Chrome extension at metamask.io. It's your gateway to the crypto world!</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-12">
+                                                    <div class="border border-dark shadow-sharp rounded-5 bg-light gsap-fade-in"
+                                                        data-scroll-trigger="true" data-y="24">
+                                                        <div class="border-bottom border-dark px-8 pt-8 pb-4">
+                                                            <ul class="list list-row gap-2">
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-danger"></span>
+                                                                </li>
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-warning"></span>
+                                                                </li>
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-success"></span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="p-8">
+                                                            <h5 style="text-transform: uppercase;">get some eth</h5>
+                                                            <p class="mb-0 fs-18 text-heading"> Next, you'll need some Ethereum (ETH). You can easily buy ETH directly within MetaMask, transfer it from another wallet, or purchase it from a cryptocurrency exchange and then send it to your MetaMask wallet. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 d-none d-xl-block">
+                                            <img src="img/char4.png" alt="image" class="img-fluid gsap-fade-in"
+                                                data-scroll-trigger="true" data-delay="1">
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div class="row g-4">
+                                                <div class="col-md-6 col-xl-12">
+                                                    <div class="border border-dark shadow-sharp rounded-5 bg-light gsap-fade-in"
+                                                        data-scroll-trigger="true" data-y="28">
+                                                        <div class="border-bottom border-dark px-8 pt-8 pb-4">
+                                                            <ul class="list list-row gap-2">
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-danger"></span>
+                                                                </li>
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-warning"></span>
+                                                                </li>
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-success"></span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="p-8">
+                                                            <h5 style="text-transform: uppercase;">go to uniswap</h5>
+                                                            <p class="mb-0 fs-18 text-heading"> Now, head over to Uniswap at app.uniswap.org. Once there, connect your MetaMask wallet. You'll then need to paste the official $1INU contract address into the token selection field, select $1INU when it appears, and confirm the connection. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-12">
+                                                    <div class="border border-dark shadow-sharp rounded-5 bg-light gsap-fade-in"
+                                                        data-scroll-trigger="true" data-y="24">
+                                                        <div class="border-bottom border-dark px-8 pt-8 pb-4">
+                                                            <ul class="list list-row gap-2">
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-danger"></span>
+                                                                </li>
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-warning"></span>
+                                                                </li>
+                                                                <li>
+                                                                    <span
+                                                                        class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-success"></span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="p-8">
+                                                            <h5 style="text-transform: uppercase;">switch eth for $1inu
+                                                            </h5>
+                                                            <p class="mb-0 fs-18 text-heading"> Finally, you can swap your ETH for $1INU. There are zero taxes on $1INU transactions, offering pure profit potential. Remember to adjust your slippage settings as needed, and get ready to ride the bullish wave! </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="img/logo.png" alt="image" style="max-width: 400px;"
+                                    class="img-fluid rotating d-none d-xl-block position-absolute start-50 top-0 translate-middle pointer-none z-n1 gsap-fade-in"
+                                    data-scroll-trigger="true">
+                                <img src="assets/img/shape/hero-element-2.png" alt="image"
+                                    class="img-fluid d-none d-xl-block position-absolute start-50 bottom-0 translate-middle-x pointer-none z-n1 gsap-fade-in"
+                                    data-scroll-trigger="true">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- How To Buy Section End -->
+            <!-- Cross Ticker  -->
+            <div class="section-space-sm-y position-relative w-100 text-center overflow-hidden">
+                <div class="ticker-2 py-4 bg-secondary border-top border-bottom border-2x border-dark">
+                    <div class="container-fluid p-0">
+                        <div class="row g-0">
+                            <div class="col-12">
+                                <div class="scroller-x" data-speed="slow" data-direction="right">
+                                    <ul class="list list-row align-items-center gap-4 scroller-x__list">
+                                        <li>
+                                            <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-secondary text-stroke text-shadow"> 1-INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-secondary text-stroke text-shadow"> 1-INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-secondary text-stroke text-shadow"> 1-INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-1.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticker-3 py-4 bg-dark border-top border-bottom border-2x border-dark">
+                    <div class="container-fluid p-0">
+                        <div class="row g-0">
+                            <div class="col-12">
+                                <div class="scroller-x" data-speed="slow" data-direction="left">
+                                    <ul class="list list-row align-items-center gap-4 scroller-x__list">
+                                        <li>
+                                            <img src="assets/img/icon-coin-4.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-secondary text-stroke text-shadow"> 1-INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-4.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-4.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-secondary text-stroke text-shadow"> 1-INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-4.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-4.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-secondary text-stroke text-shadow"> 1-INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-4.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-4.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icon-coin-4.png" alt="image" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            <h4 class="mb-0 text-primary text-stroke text-shadow"> $1INU </h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cross Ticker End -->
+            <!-- Road Map -->
+            <div class="section-space-y position-relative">
+                <div class="section-space-md-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="mb-0 text-center text-light text-stroke-md text-shadow-md fs-6vw gsap-text-animation"
+                                    data-split-type="words" data-scroll-trigger="true"> MEMES OF $1INU </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="road-map-section-1">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-5 col-xl-4 position-relative z-1">
+                                <div
+                                    class="road-map-section-1__label road-map-section-1__label--odd d-flex align-items-center gap-4 mb-4 mb-lg-0">
+                                    <div
+                                        class="w-8 h-8 rounded-circle border border-dark shadow-sharp bg-light flex-shrink-0">
+                                    </div>
+                                    <h4 class="mb-0 text-light text-stroke text-shadow flex-grow-1"> LET'S FCKING GO
+                                    </h4>
+                                </div>
+                                <div class="border border-dark shadow-sharp rounded-5 bg-light gsap-fade-in"
+                                    data-scroll-trigger="true" data-y="10">
+                                    <div class="border-bottom border-dark px-8 pt-8 pb-4">
+                                        <ul class="list list-row gap-2">
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-danger"></span>
+                                            </li>
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-warning"></span>
+                                            </li>
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-success"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-8 text-center">
+                                        <img src="img/meme/inumeme&#32;(5).png" width="100%" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block w-100 m-0"></div>
+                            <div class="col-md-6 col-lg-5 col-xl-4 position-relative z-1 ms-lg-auto">
+                                <div
+                                    class="road-map-section-1__label road-map-section-1__label--even d-flex align-items-center gap-4 mb-4 mb-lg-0">
+                                    <div
+                                        class="w-8 h-8 rounded-circle border border-dark shadow-sharp bg-light d-lg-none">
+                                    </div>
+                                    <h4 class="mb-0 text-light text-stroke text-shadow">DIAMOND HAND</h4>
+                                    <div
+                                        class="w-8 h-8 rounded-circle border border-dark shadow-sharp bg-light d-none d-lg-block">
+                                    </div>
+                                </div>
+                                <div class="border border-dark shadow-sharp rounded-5 bg-light gsap-fade-in"
+                                    data-scroll-trigger="true" data-y="10">
+                                    <div class="border-bottom border-dark px-8 pt-8 pb-4">
+                                        <ul class="list list-row gap-2">
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-danger"></span>
+                                            </li>
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-warning"></span>
+                                            </li>
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-success"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-8 text-center">
+                                        <img src="img/meme/inumeme&#32;(18).png" width="100%" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block w-100 m-0"></div>
+                            <div class="col-md-6 col-lg-5 col-xl-4 position-relative z-1">
+                                <div
+                                    class="road-map-section-1__label road-map-section-1__label--odd d-flex align-items-center gap-4 mb-4 mb-lg-0">
+                                    <div class="w-8 h-8 rounded-circle border border-dark shadow-sharp bg-light"></div>
+                                    <h4 class="mb-0 text-light text-stroke text-shadow">BULL RUN</h4>
+                                </div>
+                                <div class="border border-dark shadow-sharp rounded-5 bg-light gsap-fade-in"
+                                    data-scroll-trigger="true" data-y="10">
+                                    <div class="border-bottom border-dark px-8 pt-8 pb-4">
+                                        <ul class="list list-row gap-2">
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-danger"></span>
+                                            </li>
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-warning"></span>
+                                            </li>
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-success"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-8 text-center">
+                                        <img src="img/meme/inumeme&#32;(7).png" width="100%" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block w-100 m-0"></div>
+                            <div class="col-md-6 col-lg-5 col-xl-4 position-relative z-1 ms-lg-auto">
+                                <div
+                                    class="road-map-section-1__label road-map-section-1__label--even d-flex align-items-center gap-4 mb-4 mb-lg-0">
+                                    <div
+                                        class="w-8 h-8 rounded-circle border border-dark shadow-sharp bg-light d-lg-none">
+                                    </div>
+                                    <h4 class="mb-0 text-light text-stroke text-shadow">TO THE MOON</h4>
+                                    <div
+                                        class="w-8 h-8 rounded-circle border border-dark shadow-sharp bg-light d-lg-block d-none">
+                                    </div>
+                                </div>
+                                <div class="border border-dark shadow-sharp rounded-5 bg-light gsap-fade-in"
+                                    data-scroll-trigger="true" data-y="10">
+                                    <div class="border-bottom border-dark px-8 pt-8 pb-4">
+                                        <ul class="list list-row gap-2">
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-danger"></span>
+                                            </li>
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-warning"></span>
+                                            </li>
+                                            <li>
+                                                <span
+                                                    class="d-block w-4 h-4 rounded-circle border border-2x border-dark bg-success"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-8">
+                                        <div class="p-8 text-center">
+                                            <img src="img/meme/inumeme&#32;(3).png" width="100%" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/shape/road-map-element-1.png" alt="image"
+                        class="img-fluid road-map-section-1__element road-map-section-1__element--1">
+                    <img src="assets/img/shape/road-map-element-2.png" alt="image"
+                        class="img-fluid road-map-section-1__element road-map-section-1__element--2">
+                    <img src="assets/img/shape/road-map-element-3.png" alt="image"
+                        class="img-fluid road-map-section-1__element road-map-section-1__element--3">
+                    <img src="assets/img/shape/road-map-element-4.png" alt="image"
+                        class="img-fluid road-map-section-1__element road-map-section-1__element--4">
+                    <img src="assets/img/shape/road-map-element-5.png" alt="image"
+                        class="img-fluid road-map-section-1__element road-map-section-1__element--5">
+                    <img src="assets/img/shape/road-map-element-6.png" alt="image"
+                        class="img-fluid road-map-section-1__element road-map-section-1__element--6">
+                    <img src="assets/img/shape/road-map-element-7.png" alt="image"
+                        class="img-fluid road-map-section-1__element road-map-section-1__element--7">
+                </div>
+                <img src="assets/img/shape/cloud-sky.png" alt="image"
+                    class="img-fluid w-100 blend-y-start-15 position-absolute start-50 top-0 translate-middle z-n2 pointer-none gsap-fade-in"
+                    data-scroll-trigger="true">
+            </div>
+            <!-- Road Map End -->
+            <!-- FAQ -->
+            <div class="faq-section-1 section-space-y bg-secondary">
+                <div class="section-space-md-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="mb-0 text-center text-light text-stroke-md text-shadow-md fs-6vw gsap-text-animation"
+                                    data-split-type="words" data-scroll-trigger="true"> FAQ </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="accordion accordion-connected accordion-separate" id="faqOne">
+                                <div class="accordion-item shadow-sharp-md">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqOneA" aria-expanded="true"
+                                            aria-controls="faqOneA">
+                                            <span class="accordion-button__title"> What is 1-INU and what makes it
+                                                unique? </span>
+                                        </button>
+                                    </h2>
+                                    <div id="faqOneA" class="accordion-collapse collapse" data-bs-parent="#faqOne">
+                                        <div class="accordion-body"> 1-INU ($1INU) is a groundbreaking cryptocurrency,
+                                            the first dedicated burn project in the crypto world. With 99% of its supply
+                                            burned, what remains is legendary, making it a rare and exclusive token for
+                                            the top 1% club. </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item shadow-sharp-md">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqOneB" aria-expanded="false"
+                                            aria-controls="faqOneB">
+                                            <span class="accordion-button__title"> Why was 99% of the 1-INU supply
+                                                burned? </span>
+                                        </button>
+                                    </h2>
+                                    <div id="faqOneB" class="accordion-collapse collapse" data-bs-parent="#faqOne">
+                                        <div class="accordion-body"> The 99% supply burn was a bold move to create
+                                            scarcity and value, ensuring that only a limited amount of $1INU exists.
+                                            This legendary act sets 1-INU apart as a one-of-a-kind token in the crypto
+                                            space. </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="accordion accordion-connected accordion-separate" id="faqOne">
+                                <div class="accordion-item shadow-sharp-md">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqOneC" aria-expanded="false"
+                                            aria-controls="faqOneC">
+                                            <span class="accordion-button__title"> How can I join the 1-INU top 1% club?
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="faqOneC" class="accordion-collapse collapse" data-bs-parent="#faqOne">
+                                        <div class="accordion-body"> To join the elite 1-INU club, acquire $1INU by
+                                            setting up a wallet, getting ETH, and swapping it on Uniswap. With the
+                                            burned supply, every token you hold puts you among the select few! </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item shadow-sharp-md">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqOneD" aria-expanded="false"
+                                            aria-controls="faqOneD">
+                                            <span class="accordion-button__title"> What are the benefits of holding
+                                                1-INU? </span>
+                                        </button>
+                                    </h2>
+                                    <div id="faqOneD" class="accordion-collapse collapse" data-bs-parent="#faqOne">
+                                        <div class="accordion-body"> Holding $1INU grants you entry into an exclusive
+                                            community with potential for significant value growth due to its limited
+                                            supply. As the first burn project, itâ€™s poised to become a legendary asset
+                                            in the crypto world! </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/shape/faq-element-1.png" alt="image"
+                    class="img-fluid faq-section-1__element faq-section-1__element--1 gsap-fade-in"
+                    data-scroll-trigger="true" data-y="15">
+                <img src="assets/img/shape/hero-element-12.png" alt="image"
+                    class="img-fluid rotating faq-section-1__element faq-section-1__element--2 gsap-fade-in"
+                    data-scroll-trigger="true" data-y="15">
+            </div>
+            <!-- FAQ End -->
+            <!-- Footer -->
+            <div id="joinus" class="section-space-top section-space-sm-bottom position-relative z-1">
+                <div class="section-space-md-bottom">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="cta-1 section-space-y text-center gsap-zoom" data-scroll-trigger="true"
+                                    data-scale="0.8" data-scrub="true">
+                                    <h2 class="text-secondary text-stroke text-shadow fs-6vw"> JOIN US </h2>
+                                    <img src="img/logo.png" class="rotating floating" width="200px" alt="">
+                                    <ul class="list list-row gap-4 justify-content-center mt-8 flex-wrap">
+                                        <li>
+                                            <a href="https://t.me/OneINU_Community"
+                                                class="btn btn-icon btn-light hover:bg-secondary rounded-circle">
+                                                <iconify-icon icon="basil:telegram-solid"></iconify-icon>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://x.com/1INU_coin"
+                                                class="btn btn-icon btn-light hover:bg-secondary rounded-circle">
+                                                <iconify-icon icon="ri:twitter-x-fill"></iconify-icon>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="border border-dark shadow-sharp rounded-4 p-8 bg-light position-relative z-1">
+                                <div class="row g-4 justify-content-center align-items-center">
+                                    <div class="col-lg-5">
+                                        <p class="mb-0 ff-2 text-dark text-center text-lg-start"> &copy; $1INU 2025.
+                                            All rights reserved. </p>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <ul
+                                            class="list list-row gap-4 flex-wrap justify-content-center justify-content-lg-end">
+                                            <li>
+                                                <a href="index.html#about" class="link fs-18 text-dark hover:text-primary">
+                                                    About Us </a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html#tokenomics" class="link fs-18 text-dark hover:text-primary">
+                                                    Tokenomics </a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html#howtobuy" class="link fs-18 text-dark hover:text-primary">
+                                                    How to Buy </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://dexscreener.com/ethereum/0x24F101D415234b714A0Ebe87671B8fa06f81f845" class="link fs-18 text-dark hover:text-primary">
+                                                    Dexscreener </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/shape/footer-cloud-1.png" alt="image"
+                    class="img-fluid w-100 position-absolute start-0 end-0 bottom-0 pointer-none">
+            </div>
+            <!-- Footer End -->
+        </div>
+    </div>
+    
+    <!-- Custom Alert for No Right-Click -->
+    <div id="no-right-click-alert" class="position-fixed top-50 start-50 translate-middle d-none bg-secondary px-6 py-8 rounded-5 border border-2x border-dark shadow-sharp-md z-1000 text-center">
+        <h3 class="text-light text-stroke text-shadow mb-4 fs-24">BULLISH ON $1INU! 🚀</h3>
+        <p class="text-heading fs-18 mb-6">This is the top 1% club, anon! Right-clicking won’t get you to the moon—join the burn and HODL strong!</p>
+        <button id="close-alert" class="btn btn-icon btn-light rounded-circle">
+            <iconify-icon icon="ic:round-close"></iconify-icon>
+        </button>
+    </div>
+    
+    
+    <!-- Scripts -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/iconify.js"></script>
+    <script src="assets/js/simplebar.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/Flip.min.js"></script>
+    <script src="assets/js/app.js"></script>
+ <!-- JavaScript for No Right-Click -->
+    <script>
+        // Prevent right-click
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            const alert = document.getElementById('no-right-click-alert');
+            alert.classList.remove('d-none');
+            alert.classList.add('gsap-fade-in');
+        });
+
+        // Close alert
+        document.getElementById('close-alert').addEventListener('click', function() {
+            const alert = document.getElementById('no-right-click-alert');
+            alert.classList.add('d-none');
+            alert.classList.remove('gsap-fade-in');
+        });
+        
+        // Scroll to top on page load
+        window.addEventListener('load', function() {
+            window.scrollTo(0, 0);
+            // Remove any hash from URL to prevent jumping
+            if (window.location.hash) {
+                window.history.replaceState(null, null, window.location.pathname);
+            }
+        });
+        function copyToClipboard() {
+        const input = document.getElementById('wallet-address');
+        input.select();
+        input.setSelectionRange(0, 99999); // Untuk perangkat mobile
+        
+        try {
+            navigator.clipboard.writeText(input.value).then(() => {
+                // Optional: Tambahkan feedback visual
+                alert('Address copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        } catch (err) {
+            console.error('Clipboard API not supported: ', err);
+        }
+    }
+    </script>
+</body>
+
+
+</html>
